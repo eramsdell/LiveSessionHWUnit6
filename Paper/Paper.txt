@@ -1,0 +1,4 @@
+This analysis is based on the plot within the Analysis directory. Although there is a slight
+increase in the general shape of the plot, it does not seem that square footage directly affects
+price in Queens. There could be other factors affecting the price such as location, renovation, 
+appliances and so on that would cause the square foot to have less of an effect as expected
