@@ -1,0 +1,20 @@
+---
+title: "Analysis"
+author: "Elizabeth Ramsdell"
+date: "October 14, 2016"
+output: 
+  html_document:
+  keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Square Footage and Sale Price
+```{r}
+QueensData <- read.table("Queens.homes.csv")
+plot(log(Queens.homes$gross.sqft), log(Queens.homes$sale.price.n))
+
+```
+
