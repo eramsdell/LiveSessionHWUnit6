@@ -38,9 +38,6 @@ Queens.sale <- Queens[Queens$sale.price.n!=0,]
 plot(Queens.sale$gross.sqft,Queens.sale$sale.price.n)
 plot(log10(Queens.sale$gross.sqft),log10(Queens.sale$sale.price.n))
 
-## remove outliers that seem like they weren't actual sales
-## Queens.homes$outliers <- (log(Queens.homes$sale.price.n) <=5) + 0 (this line is listed further down)
-
 ## for simplicity, let's look at 1-, 2-, and 3-family homes
 Queens.homes <- Queens.sale[which(grepl("FAMILY",Queens.sale$building.class.category)),]
 dim(Queens.homes)
